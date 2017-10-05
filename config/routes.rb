@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   post   '/login',   to: 'sessions#create'
   get    '/post',   to: 'posts#new'
   post   '/post',   to: 'posts#create'
-  post  '/allposts', to: 'posts#index'
+  get  '/allposts', to: 'posts#index'
   resources :posts
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
