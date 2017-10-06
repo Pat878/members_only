@@ -1,4 +1,10 @@
 <h1>Posts#index</h1>
 <p>Find me in app/views/posts/index.html.erb</p>
+<% @posts.each do |post| %>
+<ul>
+    <li><%= post.body %></li>
+    <li><%= post.user.name %></li>
+</ul>
+  <% end %>
 
 <%= button_to "New Post", post_path, :method => :get %>
