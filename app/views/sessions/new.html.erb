@@ -17,7 +17,9 @@
 
       <%= f.submit "Log in", class: "btn btn-primary" %>
     <% end %>
-
+    <p>
+      <%= flash[:danger] unless flash[:danger].blank? %>
+    </p>
 
   </div>
 </div>
