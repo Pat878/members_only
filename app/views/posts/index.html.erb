@@ -2,9 +2,11 @@
 <p>Find me in app/views/posts/index.html.erb</p>
 <% @posts.each do |post| %>
 <ul>
-    <li><%= post.body %></li>
-    <li><%= post.user.name %></li>
-</ul>
+  <li><%= post.body %></li>
+  <% if logged_in? %>
+  <li> <%= post.user.name %></li>
   <% end %>
+</ul>
+<% end %>
 
 <%= button_to "New Post", post_path, :method => :get %>
