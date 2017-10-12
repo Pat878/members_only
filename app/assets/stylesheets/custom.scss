@@ -1,6 +1,13 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+.box {
+  width: 300px;
+  border: 2px solid green;
+  padding: 10px;
+  margin: 25px;
+
+}
 
 .submit {
   margin-top: 20px;
