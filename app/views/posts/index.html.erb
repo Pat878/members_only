@@ -1,12 +1,23 @@
 <% provide(:title, "Posts") %>
-<h1>Posts</h1>
+<center><h1>Posts</h1></center>
+
 <% @posts.each do |post| %>
-<ul>
-  <li><%= post.body %></li>
+<div class="row">
+  <div class="col-md-2 col-md-offset-4">
+
+
+<div class="box">
+  <%= post.body %>
   <% if logged_in? %>
-  <li> <%= post.user.name %></li>
-  <% end %>
-</ul>
+  <hr>
+  <%= post.user.name %>
+
+
+
+<% end %>
+</div>
+</div>
+</div>
 <% end %>
 
-<%= button_to "New Post", post_path, :method => :get %>
+<center><%= button_to "New Post", post_path, :method => :get %></center>
