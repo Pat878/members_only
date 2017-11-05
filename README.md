@@ -1,24 +1,5 @@
-# README
+# Members Only
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A Twin Peaks-inspired "members only" project. The app displays quotes from different Twin Peaks characters. Unless you're logged in, you can't see who said the quote.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+I followed Michael Hartl's Ruby on Rails Tutorial while completing this project.
