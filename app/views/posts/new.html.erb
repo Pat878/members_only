@@ -1,6 +1,6 @@
 <% provide(:title, "New Post") %>
 <h1>New Posts</h1>
 <%= form_for(@post, url: post_path) do |f| %>
-  Username:<br>  <%= f.text_field :body, placeholder: "Username" %><br>
+  Post:<br>  <%= f.text_field :body, placeholder: "New Post" %><br>
   <%= f.submit "Submit" %><br>
 <% end %>
